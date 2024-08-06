@@ -46,7 +46,7 @@ body * {
   padding: 24px;
 }
 
-#profile img {
+#profile img { 
   width: 112px;
   border-radius: 100%;
 }
@@ -62,3 +62,41 @@ body * {
 }
 
 /*Switch*/
+#switch {
+  position: relative;
+  width: 64px;
+  margin: 4px auto;
+}
+
+#switch button{
+  width: 32px;
+  height: 32px;
+  background:white var(--switch-bg-url) no-repeat center;
+  border-radius: 50%;
+  border: 0;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  transform: translateY(-50%);
+  animation: slide-back 0.2s;
+}
+
+.light #switch button {
+  animation: slide-in 0.2;
+}
+#switch button:hover {
+  outline: 8px solid var(--hightlight-color);
+}
+
+#switch span {
+  display: block;
+  width: 64px;
+  height: 24px;
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 9999px;
+}
