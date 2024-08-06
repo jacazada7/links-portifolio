@@ -163,3 +163,18 @@ ul li a ion-icon {
 #social-links a:hover {
   background: var(--hightlight-color);
 }
+
+/* Footer */
+footer {
+  padding: 24px;
+  text-align: center;
+  font-size: 14px;
+}
+
+footer a{
+  padding: 10px;
+}
+
+footer a:hover {
+  color: var(--stroke-color);
+}
